@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/652ab1c570.js" crossorigin="anonymous"></script>
 </head>
                <!-- WEB PAGE -->
 <body class="bg-secondaryBlue">
    <section class="container mx-auto flex justify-between items-center my-6">
     <!-- ACCOUNT  -->
      <div class="hidden sm:hidden md:hidden lg:block">
-        <a href="#" class="text-black sm:px-3 sm:py-1 md:py-3 md:px-6 border border-black font-bold  rounded-2xl ">my account</a>
+        <a href="#" class="text-black sm:px-3 sm:py-1 md:py-3 md:px-6 border border-black font-bold  rounded-2xl ">My account</a>
      </div> 
 
     <!-- LOGO -->
@@ -31,21 +32,347 @@
     </ul>
 
     <!-- Account link  for meduim screen-->
-    <div class="block lg:hidden">
-        <a href="#" class="text-black   py-2 px-4 border border-black  rounded-2xl ">my account</a>
+    <div class="hidden">
+        <a href="#" class="text-black   py-2 px-4 border border-black  rounded-2xl ">My account</a>
      </div>
+     <!-- burger menu -->
+     <i class="fa-solid fa-bars text-2xl md:hidden cursor-pointer"></i>
    </section> 
    <!-- HERO SECTION -->
-   <section class="container flex justify-center items-center mx-auto">
+   <section class="container flex justify-center items-center mx-auto ">
     <div class="bg-[url('img@2x.png')] bg-cover w-full h-96  rounded-2xl lg:h-[80vh]">
         <div class="flex items-center flex-col pt-20 h-full text-center">
-            <h1 class="font-bold text-primaryblack text-xl md:text-4xl lg:text-5xl">Find your dream trip today</h1>
-            <p class="leading-4 text-xs pt-3 lg:text-xl">Fill up the form to get best adventures suited just for you!</p>
+            <h1 class="font-bold text-primaryblack text-2xl md:text-5xl lg:text-5xl">Find your dream trip today</h1>
+            <p class="text-gray-500 text-xS md:text-xs pt-3 lg:text-xl">Fill up the form to get best adventures suited just for you!</p>
         </div>
 
     </div>
-
    </section>
-     
+
+   <!-- DEXTOP ONLY ! SEARCH -->
+   <section class="container lg:flex justify-center flex-col items-center mx-auto w-11/12 hidden">
+    <div class="bg-white h-32 w-full rounded-2xl -m-16 flex flex-row  items-center px-20 cursor-pointer ">
+        <div class="border-r-2 border-gray-600  w-1/4 text-center flex flex-col justify-center">
+            <div class="font-bold">
+                <i class="fa-regular fa-map pr-2"></i>Locations
+            </div>
+            <p class="text-sm leading-4">set your destination</p>
+            </div>
+        <div class="border-r-2 border-gray-600  w-1/4 text-center flex flex-col justify-center">
+            <div class="font-bold">
+                <i class="fa-solid fa-bolt pr-2"></i>Activity
+            </div>
+            <p class="text-sm leading-4">choose your activity</p>
+            
+        </div>
+        <div class="w-1/4   flex flex-col justify-center text-center">
+            <div class="font-bold">
+                <i class="fa-solid fa-calendar-days pr-2"></i></i>Date
+            </div>
+            <p class="text-sm leading-4">add preferred date</p>
+            
+        </div>
+        <div class="border-gray-600  w-1/4 text-center  flex flex-row justify-center">
+            <a href="#" class="text-white   py-2 px-6   bg-customOrange rounded-2xl hover:bg-opacity-80">Search <i class="fa-solid fa-arrow-right"></i></a>     
+        </div>
+    </div>
+    <p class="text-gray-500 mt-20">Trusted by over 800 000 explorers around the world.</p>
+   </section>
+
+   <!-- TRIPS SECTION -->
+    <section class="container mx-auto  my-5 ">
+        <p class="leading-3 text-gray-500 text-sm">Trips in PlanCo</p>
+        <h1 class="my-3 mb-5 font-bold text-3xl sm:text-3xl md:text-3xl lg:text-4xl text-gray-800 underline decoration-orangeunderline decoration-4">Our adventures</h1>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+            <div class="rounded-2xl relative hover:opacity-80  cursor-pointer">
+                <img class="w-full rounded-2xl" src="tripsimg.svg" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl">Kayaking <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+            <div class="rounded-2xl relative hover:bg-black hover:opacity-80  cursor-pointer">
+                <img class="w-full rounded-2xl" src="tripsimg2.png" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl">Hiking <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+            <div class="rounded-2xl relative hover:bg-black hover:opacity-80  cursor-pointer">
+                <img class="w-full rounded-2xl" src="tripsimg3.png" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl ">Family Trips <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+            <div class="rounded-2xl relative hover:bg-black hover:opacity-80 ">
+                <img class="w-full rounded-2xl" src="tripsimg4.svg" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl">Honeymoon <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+            <div class="rounded-2xl relative hover:bg-black hover:opacity-80  cursor-pointer">
+                <img class="w-full rounded-2xl" src="tripsimg5.svg" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl">Camping <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+            <div class="rounded-2xl relative hover:bg-black hover:opacity-80  cursor-pointer">
+                <img class="w-full rounded-2xl" src="tripsimg.svg" alt="" srcset="">
+                <p class="absolute bottom-0 text-white bg-black  w-full bg-opacity-80 md:text-xl text-center md:p-4 sm:py-3 rounded-b-2xl">Kayaking <i class="fa-solid fa-arrow-right"></i></p>
+                
+            </div>
+        
+        </div>
+
+    </section>
+
+    <!-- PLACES IN PLANCO  -->
+    <section class="container mx-auto my-16">
+        <p class="leading-3 text-gray-500 text-sm">Places in PlanCo</p>
+        <h1 class="my-3 mb-5 font-bold sm:text-3xl text-3xl lg:text-4xl text-gray-800 underline decoration-orangeunderline decoration-4">Best locations</h1>
+        <div class="locations grid md:grid-cols-2 sm:grid-cols-1 gap-6">
+            <div class="rounded-2xl relative hover:opacity-80 cursor-pointer">
+                <img class="w-full  rounded-2xl" src="location2.svg" alt="" srcset="">
+                <div class="absolute bottom-0 text-white   w-full  rounded-b-2xl">
+                    <h1 class="md:text-3xl lg:text-4xl px-4  text-xl">North America</h1>
+                    <p class="lg:p-4 p-2 text-sm lg:text-xl  ">Discover beautiful moment while exporing <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                
+                
+            </div>
+            <div class="rounded-2xl relative hover:opacity-80 text-2xl cursor-pointer">
+                <img class="w-full  rounded-2xl" src="location1.png" alt="" srcset="">
+                <div class="absolute bottom-0 text-white   w-full  rounded-b-2xl">
+                    <h1 class="md:text-3xl lg:text-4xl px-4  text-xl">Asia</h1>
+                    <p class="lg:p-4 p-2 text-sm lg:text-xl  ">Discover beautiful moment while exporing <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="rounded-2xl relative hover:opacity-80 text-2xl cursor-pointer">
+                <img class="w-full  rounded-2xl" src="location.svg" alt="" srcset="">
+                <div class="absolute bottom-0 text-white   w-full  rounded-b-2xl">
+                    <h1 class="md:text-3xl lg:text-4xl px-4  text-xl">South America</h1>
+                    <p class="lg:p-4 p-2 text-sm lg:text-xl  ">Discover beautiful moment while exporing <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="rounded-2xl relative hover:opacity-80 text-2xl cursor-pointer">
+                <img class="w-full  rounded-2xl" src="location3.png" alt="" srcset="">
+                <div class="absolute bottom-0 text-white   w-full  rounded-b-2xl">
+                    <h1 class="md:text-3xl lg:text-4xl px-4  text-xl">Africa</h1>
+                    <p class="lg:p-4 p-2 text-sm lg:text-xl  ">Discover beautiful moment while exporing <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+    <!-- REVIEW SECTION -->
+    <section class="container mx-auto my-16">
+        <p class="leading-3 text-gray-500 text-sm">What do customers say?</p>
+        <h1 class="my-3 mb-5 font-bold sm:text-3xl text-3xl lg:text-4xl text-gray-800 underline decoration-orangeunderline decoration-4">Reviews</h1>
+        <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto">
+            <div class="p-8 rounded-2xl bg-white ">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile1.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Veteran Gates</p>
+                    </div>
+                    <img src="facebooklogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo!</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile4.png" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Bavine ruth</p>
+                    </div>
+                    <img src="googlelogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile3.jpg" class="h-8 w-8 rounded-2xl" alt="" srcset="">
+                        <p class="px-4">Charles charlie</p>
+                    </div>
+                    <img src="starlogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile1.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Giwa Mubarak</p>
+                    </div>
+                    <img src="starlogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">Best time in my life, totally recommend!</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile1.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Stephen cook</p>
+                    </div>
+                    <img src="facebooklogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profille2.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Fredick George</p>
+                    </div>
+                    <img src="starlogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profille2.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Fredick George</p>
+                    </div>
+                    <img src="starlogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile3.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">John Maverick </p>
+                    </div>
+                    <img src="googlelogo.svg" class="h-6 w-6" alt="" srcset="">
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-white">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-center items-center">
+                        <img src="profile1.jpg" class="h-8 w-8 rounded-lg" alt="" srcset="">
+                        <p class="px-4">Sultan Molaq</p>
+                    </div>
+                    
+                </div>
+                <p class="p-3 text-sm">It was a pleasure to participate in adventure organized by PlanCo! Great activites and awesome people! Never forget this trip.</p>
+            </div>
+        </div>
+        
+        </div>
+        
+     </section>
+     <!-- FAQ-section -->
+     <section class="container mx-auto my-16">
+        <p class="leading-3 text-gray-500 text-sm">What do customers say?</p>
+        <h1 class="my-3 mb-5 font-bold sm:text-3xl text-3xl lg:text-4xl text-gray-800 underline decoration-orangeunderline decoration-4">FAQ</h1>
+        <div class="grid grid-cols-1 gap-4">
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">What is this service about?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                  What our service about
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium vitae illum repudiandae sit et neque maiores assumenda, exercitationem facere!
+            </div>
+        </div>
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">What destinations do you offer?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                  We offer a variety of destinations around the world including popular tourist spots and off-the-beaten-path locations.
+            </div>
+        </div>
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">How do I book a trip?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                You can book a trip directly through our website by selecting your destination, dates, and package, and following the checkout process.           
+            </div>
+        </div>
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">What payment methods do you accept?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                 We accept major credit cards, paypal, and bank transfers
+            </div>
+        </div>
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">Can I customize my travel package?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                  Yes, we offer customizable packages. Contact our customer service for more details
+            </div>
+        </div>
+        <div class=" px-8 py-4 text-gray-900 w-full bg-white rounded-2xl">
+            <div class="flex justify-between items-center w-full faq-button cursor-pointer font-semibold">
+                <span class="text-xl">Is travel insurance included in the packages?</span>
+                <span class="text-2xl"><i class="fa-solid fa-arrow-down"></i></span>
+            </div>
+            <div class="faq-body max-h-0 overflow-hidden transition-all duration-200 ease-out">
+                  Travel insurance is not included in the base packages but can be added for an additional fee.
+            </div>
+        </div>
+        </div>
+     </section>
+     <footer class="container bg-gray-950 my-16 mx-auto text-white md:p-16 p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <p class="mb-8 md:text-2xl text-xl font-bold">Be notified about the best trip deals</p>
+                <div class="flex md:items-start items-center flex-col">
+                    <input type="email" class="block rounded-lg border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 md:w-2/3 w-full" placeholder="e.g. giwaomogiwa@gmail.com " aria-label="Email for deals">
+                    <button class=" my-4 px-3 py-1.5 rounded-lg  border-2 border-black hover:bg-slate-400 focus:bg-slate-400 focus:outline-none text-black bg-white">Check deals</button>
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-between items-center gap-6 w-full flex-wrap">
+                <div class="flex flex-col gap-4">
+                    
+                        <h3 class="lg:mt-10 mt-5 text-xl ">Links</h3>
+                    <ul>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Our company</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Locations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Inspirations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Privacy policy</a></li>
+                    </ul>            
+                </div>
+                <div class="flex flex-col gap-4">
+                    
+                        <h3 class="lg:mt-10 mt-5 text-xl">Company</h3>
+                    <ul>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">About us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Inspirations</a></li>
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">Trip Informations</a></li>
+                        
+                    </ul>            
+                </div>
+                <div class="flex flex-col gap-4 items-start justify-between">
+                        <h3 class="  text-xl">Reach us here</h3>
+                    <ul class="w-full">
+                        <li><a href="#" class="text-gray-300 hover:font-bold  focus:font-bold leading-3">planco@shop</a></li>
+                        <li class="flex justify-between items-center items w-full my-4">
+                            <a href="#"><img src="uil_twitter.svg" alt="" srcset=""></a>
+                            <a href="#"><img src="uil_facebook.svg" alt="" srcset=""></a>
+                            <a href="#"><img src="insta.svg" alt="" srcset=""></a>
+                        </li>
+                    </ul>            
+                </div>
+            </div>   
+           
+        </div>
+        <div>
+            
+        </div>
+        <div class="w-full mx-auto my-10  flex items-center justify-center md:justify-start">
+            <h1 class="text-3xl font-bold text-white cursor-pointer py-3 ">Plan<span class="text-customOrange">Co</span></h1>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
 </body>
 </html>

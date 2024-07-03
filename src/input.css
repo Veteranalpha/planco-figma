@@ -5,3 +5,10 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+@layer components {
+    .faq-button.active i {
+        @apply transition ease-in-out duration-300;
+        transform: rotateX(180deg);
+    }
+}
