@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    './index.html',
+    "./src/**/*.{html,js}"
+  ],
   theme: {
     container: {
       center: true,
@@ -27,7 +30,7 @@ module.exports = {
         orangeunderline: '#F0D3CC'
       },
       backgroundImage: {
-        'hero-image': "url('src\img@2x.png')",
+        'hero-image': "url('src\assets\coverbg.png')",
       }
     },
   },

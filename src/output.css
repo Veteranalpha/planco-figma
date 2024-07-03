@@ -668,6 +668,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -866,8 +870,8 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-\[url\(\'img\@2x\.png\'\)\] {
-  background-image: url('img@2x.png');
+.bg-hero-image {
+  background-image: url('srcassetscoverbg.png');
 }
 
 .bg-cover {
